@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+body{
+margin: 0;
+height: 2000px;
+}
+.boxes{
+  position: absolute;
+}
+input{
+  width: 50px;
+  height: 50px;
+}
+.text-input
+{
+width: 200px;
+}
+.characters{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 30%;
+}
+.character img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  background-color: blueviolet;
+  margin: 1%;
+}
+.hidden{
+  opacity: 0;
+}
