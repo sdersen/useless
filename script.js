@@ -19,6 +19,7 @@ const characters = document.querySelector(".characters");
 const characterImage = document.createElement("img");
 const p = document.createElement("p");
 p.textContent = "Hej";
+p.textContent = "Hej";
 
 potterImages.forEach((potterImage) => {
   const characterImage = document.createElement("img");

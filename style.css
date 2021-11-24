@@ -1,29 +1,29 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
-margin: 0;
-height: 2000px;
+body {
+  margin: 0;
+  height: 2000px;
 }
-.boxes{
+.boxes {
   position: absolute;
 }
-input{
+input {
   width: 50px;
   height: 50px;
 }
-.text-input
-{
-width: 200px;
+.text-input {
+  width: 200px;
+  font-family: "Courier New", Courier, monospace;
 }
-.characters{
+.characters {
   /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   top: 30%;
 }
-.character img{
+.character img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -32,6 +32,6 @@ width: 200px;
   background-color: blueviolet;
   margin: 1%;
 }
-.hidden{
+.hidden {
   opacity: 0;
 }
