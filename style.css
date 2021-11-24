@@ -17,7 +17,7 @@ input{
 width: 200px;
 }
 .characters{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
