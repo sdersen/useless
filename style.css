@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap');
+:root {
+  --pink: #fcebf4;
+  --darker-pink: #fab0d7;
+  --teal: #2ec3bd;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   height: 2000px;
+  font-family: 'Source Code Pro', monospace;
+  background-color: var(--pink);
+}
+h1 {
+  text-align: center;
+  margin: auto;
 }
 .boxes {
-  position: absolute;
+  /* position: absolute; */
+  /* Måste vara relativ annars funkar inte boxarna. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 input {
   width: 50px;
@@ -14,23 +31,37 @@ input {
 }
 .text-input {
   width: 200px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 .characters {
-  /* position: absolute; */
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top: 30%;
+  top: 40%;
 }
-.character img {
+.character {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  background-color: blueviolet;
   margin: 1%;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+button {
+  height: 50px;
+  width: 150px;
+  border-radius: 5%;
+  border: #2ec3bd 2px solid;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'Source Code Pro', monospace;
 }
 .hidden {
   opacity: 0;
