@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap');
 :root {
-  --pink: #fcebf4;
+  --light-grey: #e0e0e0;
   --darker-pink: #fab0d7;
-  --teal: #2ec3bd;
+  --beige: #946a2c;
+  --middle-blue: #23305c;
+  --dark-blue: #0e1a40;
 }
 * {
   box-sizing: border-box;
@@ -11,11 +13,13 @@ body {
   margin: 0;
   height: 2000px;
   font-family: 'Source Code Pro', monospace;
-  background-color: var(--pink);
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
 }
 h1 {
   text-align: center;
   margin: auto;
+  margin-top: 20px;
 }
 .boxes {
   /* position: absolute; */
@@ -24,10 +28,18 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+  max-width: 300px;
+  margin: auto;
 }
 input {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+}
+.input-field {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .text-input {
   width: 200px;
@@ -38,7 +50,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top: 40%;
+  top: 67%;
 }
 .character {
   height: 100px;
@@ -52,7 +64,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 button {
   height: 50px;
@@ -62,6 +74,17 @@ button {
   background: transparent;
   font-size: 1rem;
   font-family: 'Source Code Pro', monospace;
+}
+.quote-container {
+  display: flex;
+  justify-content: center;
+}
+.quote-card {
+  height: 170px;
+  width: 350px;
+  background-color: var(--beige);
+  border-radius: 5%;
+  padding: 5%;
 }
 .hidden {
   opacity: 0;
