@@ -1,9 +1,18 @@
 window.addEventListener('scroll', function (e) {
   if (window.scrollY < 600) {
-    document.body.style.backgroundColor = 'var(--pink)';
+    document.body.style.backgroundColor = 'var(--timber-grey)';
   } else {
     document.body.style.backgroundColor = 'var(--darker-pink)';
   }
+});
+
+//Name
+
+const nameInput = document.querySelector('.text-input');
+const yourName = document.querySelector('.name');
+
+nameInput.addEventListener('keyup', (e) => {
+  yourName.textContent = `Okey ${e.target.value} let´s play!`;
 });
 
 // Potter section
@@ -21,23 +30,23 @@ checkOne.addEventListener(
 const potterImages = [
   {
     url: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Hermione_Granger_poster.jpg/220px-Hermione_Granger_poster.jpg',
-    alt: 'An image',
+    alt: 'Hermoine Granger',
   },
   {
     url: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg',
-    alt: 'An image 2',
+    alt: 'Ron Weasley',
   },
   {
     url: 'https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg',
-    alt: 'An image3',
+    alt: 'Harry Potter',
   },
   {
     url: 'https://upload.wikimedia.org/wikipedia/en/f/fe/Dumbledore_and_Elder_Wand.JPG',
-    alt: 'An image3',
+    alt: 'Professon Dumbeldore',
   },
   {
     url: 'https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg',
-    alt: 'An image3',
+    alt: 'Hagrid',
   },
 ];
 
@@ -82,6 +91,7 @@ checkThree.forEach((check) => {
 
 // QUOTES
 const card = document.querySelector('.quote-card');
+const quote = document.querySelector('.quote');
 
 const quotes = [
   'I assure you that if you die, you need not hand your homework in.',
@@ -97,9 +107,7 @@ function randomQuote(quote) {
 
 function createCard() {
   card.classList.remove('hidden');
-  const h3 = document.createElement('h3');
-  h3.textContent = randomQuote(quotes);
-  card.appendChild(h3);
+  quote.textContent = randomQuote(quotes);
 
   const button = document.createElement('button');
   button.textContent = 'Close';
@@ -107,7 +115,7 @@ function createCard() {
 
   button.addEventListener('click', () => {
     card.classList.add('hidden');
-    //Här behöver jag på ngt sätt ta bort det som redan lagts fram.
+    // button.remove();
   });
 }
 
