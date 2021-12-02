@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="confetti.css" />
     <link rel="stylesheet" href="boxes.css" />
+    <link rel="stylesheet" href="media.css">
     <title></title>
   </head>
   <body>
@@ -28,39 +29,41 @@
       </svg>
       <h1>The checkbox checker</h1>
     </div>
-    <div class="input-field">
-      <form action="">
-        <label for="Text">Name</label>
-        <input class="text-input" type="text" id="text" name="text" />
-      </form>
-    </div>
-    <div class="name-container">
-      <p class="name"></p>
-    </div>
-    <form class="boxes" action="">
-      <label for=""></label>
-      <input class="check-one" type="checkbox" id="check" name="check" />
-      <input class="check-two" type="checkbox" id="check" name="check" />
-      <input class="check-three" type="checkbox" id="check" name="check" />
-      <input class="check-four" type="checkbox" id="check" name="check" />
-      <input class="check-five" type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input class="check-three" type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input class="check-three" type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input class="check-three" type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input type="checkbox" id="check" name="check" />
-      <input class="check-three" type="checkbox" id="check" name="check" />
-    </form>
-    <div>
+    <section class="main-content">
+      <section class="input-fields">
+        <div class="input-field">
+          <form action="">
+            <label for="Text">Name</label>
+            <input class="text-input" type="text" id="text" name="text" />
+          </form>
+        </div>
+        <div class="name-container">
+          <p class="name"></p>
+        </div>
+        <form class="boxes" action="">
+          <label for=""></label>
+          <input class="check-one" type="checkbox" id="check" name="check" />
+          <input class="check-two" type="checkbox" id="check" name="check" />
+          <input class="check-three" type="checkbox" id="check" name="check" />
+          <input class="check-four" type="checkbox" id="check" name="check" />
+          <input class="check-five" type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input class="check-three" type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input class="check-three" type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input class="check-three" type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
+          <input class="check-three" type="checkbox" id="check" name="check" />
+        </form>
+      </section>
       <!-- POTTER SECTION -->
       <div class="flex-container">
         <section class="characters"></section>
@@ -68,6 +71,13 @@
           <!-- <button>htr</button> -->
         </section>
       </div>
+      <!-- QUOTES -->
+      <section class="quote-container">
+        <div class="quote-card hidden">
+          <h3 class="quote"></h3>
+          <!-- <button>Knapp</button> -->
+        </div>
+      </section>
       <!-- CONFETTI -->
       <section class="confetti-container hidden">
         <span class="confetti"></span><span class="confetti"></span
@@ -81,13 +91,7 @@
         ><span class="confetti"></span><span class="confetti"></span
         ><span class="confetti"></span><span class="confetti"></span>
       </section>
-      <section class="quote-container">
-        <div class="quote-card hidden">
-          <h3 class="quote"></h3>
-          <!-- <button>Knapp</button> -->
-        </div>
-      </section>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

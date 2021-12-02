@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap');
 :root {
-
   --darker-pink: #fab0d7;
   --pink: #facee5;
-  --teal: #80B7BA;
+  --teal: #80b7ba;
 
-  --viridan-green:#119DA4;
-  --timber-grey:#d7d9ce;
-  --black-ish:#040404;
-  --purpule:#dabfff;
-
+  --viridan-green: #119da4;
+  --timber-grey: #d7d9ce;
+  --black-ish: #040404;
+  --purpule: #dabfff;
 
   --middle-blue: #23305c;
   --dark-blue: #0e1a40;
 
-   --light-grey: #d1d1d1;
-  --candy-pink: #DD7373;
-  --minion :#EAD94C;
+  --light-grey: #d1d1d1;
+  --candy-pink: #dd7373;
+  --minion: #ead94c;
 }
 * {
   box-sizing: border-box;
@@ -28,12 +26,13 @@ body {
   background-color: var(--timber-grey);
   color: var(--dark-blue);
 }
-.heading{
-display: flex;
-flex-direction: column;
-margin-top: 5%;
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
 }
-svg{
+svg {
   height: 75px;
   margin: auto;
   animation: rotateY 2s 2;
@@ -47,7 +46,7 @@ svg{
     transform: rotateY(360deg);
   }
 }
-svg:hover{
+svg:hover {
   color: var(--viridan-green);
 }
 h1 {
@@ -55,9 +54,20 @@ h1 {
   margin: auto;
   margin-top: 20px;
 }
-h1:hover{
+h1:hover {
   color: var(--viridan-green);
 }
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
 .boxes {
   /* position: absolute; */
   /* Måste vara relativ annars funkar inte boxarna. */
@@ -67,6 +77,7 @@ h1:hover{
   margin-top: 30px;
   max-width: 300px;
   margin: auto;
+  z-index: 99;
 }
 input {
   width: 50px;
@@ -82,22 +93,18 @@ input {
   width: 200px;
   font-family: 'Courier New', Courier, monospace;
 }
-.name{
+.name {
   text-align: center;
 }
-.flex-container{
 
-}
 .characters {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top: 73%;
+  top: 75%;
 }
-@media screen  and (min-width: 768px){
 
-}
 .character {
   height: 100px;
   width: 100px;
@@ -121,12 +128,13 @@ button {
   font-size: 1rem;
   font-family: 'Source Code Pro', monospace;
 }
-button:hover{
+button:hover {
   background-color: var(--purpule);
 }
 .quote-container {
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 .quote-card {
   height: 250px;
