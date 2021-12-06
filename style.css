@@ -16,6 +16,10 @@
   --candy-pink: #dd7373;
   --minion: #ead94c;
 }
+@font-face {
+  font-family: 'Dont Click Me';
+  src: url('Fonts/DontClickMeDEMO-Regular.woff2') format('woff2');
+}
 * {
   box-sizing: border-box;
 }
@@ -36,6 +40,7 @@ svg {
   height: 75px;
   margin: auto;
   animation: rotateY 2s 2;
+  -webkit-animation: rotateY 2s 2;
   animation-timing-function: linear;
 }
 @keyframes rotateY {
@@ -46,6 +51,14 @@ svg {
     transform: rotateY(360deg);
   }
 }
+@-webkit-keyframes rotateY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
 svg:hover {
   color: var(--viridan-green);
 }
@@ -53,15 +66,21 @@ h1 {
   text-align: center;
   margin: auto;
   margin-top: 20px;
+  font-family: 'Dont Click Me';
+  font-size: 4rem;
 }
 h1:hover {
   color: var(--viridan-green);
 }
 .main-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 .input-fields {
   display: flex;
@@ -77,6 +96,7 @@ h1:hover {
   margin-top: 30px;
   max-width: 300px;
   margin: auto;
+  padding-top: 5%;
   z-index: 99;
 }
 input {
@@ -96,13 +116,16 @@ input {
 .name {
   text-align: center;
 }
+/* VINGARDIUM */
 
+/* CHARACTERS */
 .characters {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top: 75%;
+  /* top: 75%; */
+  margin-top: 5%;
 }
 
 .character {
@@ -117,7 +140,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5%;
 }
 button {
   height: 50px;
@@ -131,10 +154,15 @@ button {
 button:hover {
   background-color: var(--purpule);
 }
+
+/* QUOTES */
 .quote-container {
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   z-index: 99;
+  margin-top: 5%;
+  /* top: 66%; */
 }
 .quote-card {
   height: 250px;
@@ -143,6 +171,51 @@ button:hover {
   border-radius: 15px;
   padding: 5%;
 }
+/* DiSSAPERING BOXES */
+.fly-away {
+  animation: flyAway 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes flyAway {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-350px);
+    opacity: 0;
+  }
+}
+
+/* LIST OF CHARACTERS */
+.character-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avada-kedavra-btn {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Engorgio */
+.check-five {
+  height: 200px;
+  width: 200px;
+  transition: 2s ease-in-out;
+}
+.Engorgio-text {
+  text-align: center;
+}
 .hidden {
   opacity: 0;
+}
+.gone {
+  display: none;
+}
+.z-index {
+  z-index: 0;
 }

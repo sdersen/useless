@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', (e) => {
   if (window.scrollY < 600) {
     document.body.style.backgroundColor = 'var(--timber-grey)';
   } else {
@@ -6,7 +6,14 @@ window.addEventListener('scroll', function (e) {
   }
 });
 
-//Name
+window.addEventListener('scroll', (e) => {
+  console.log(window.scrollY);
+  if (window.scrollY > 1100) {
+    console.log('Ava Kadavra');
+  }
+});
+
+//ENTER NAME
 
 const nameInput = document.querySelector('.text-input');
 const yourName = document.querySelector('.name');
@@ -15,7 +22,7 @@ nameInput.addEventListener('keyup', (e) => {
   yourName.textContent = `Okey ${e.target.value} let´s play!`;
 });
 
-// Potter section
+// POTTER SECTION
 const checkOne = document.querySelector('.check-one');
 const btnContainer = document.querySelector('.btn-container');
 
@@ -54,20 +61,20 @@ const characters = document.querySelector('.characters');
 
 function potterHeads() {
   potterImages.forEach((potterImage) => {
-    console.log(potterImage);
     const img = document.createElement('img');
     img.src = potterImage.url;
     img.alt = potterImage.alt;
     img.classList.add('character');
     characters.appendChild(img);
   });
+
   const button = document.createElement('button');
   button.textContent = 'Ok go away...';
   btnContainer.appendChild(button);
 
   button.addEventListener('click', () => {
-    characters.classList.add('hidden');
-    button.classList.add('hidden');
+    characters.classList.add('gone');
+    button.classList.add('gone');
   });
 }
 
@@ -80,7 +87,7 @@ checkTwo.addEventListener('click', () => {
   confetti.classList.toggle('hidden');
 });
 
-//HIDDEN BOXES
+//DISSAPERING BOXES
 const checkThree = document.querySelectorAll('.check-three');
 
 checkThree.forEach((check) => {
@@ -90,8 +97,10 @@ checkThree.forEach((check) => {
 });
 
 // QUOTES
+const cardContainer = document.querySelector('.quote-container');
 const card = document.querySelector('.quote-card');
 const quote = document.querySelector('.quote');
+const checkFours = document.querySelectorAll('.check-four');
 
 const quotes = [
   'I assure you that if you die, you need not hand your homework in.',
@@ -106,7 +115,8 @@ function randomQuote(quote) {
 }
 
 function createCard() {
-  card.classList.remove('hidden');
+  card.classList.remove('gone');
+  cardContainer.classList.remove('gone');
   quote.textContent = randomQuote(quotes);
 
   const button = document.createElement('button');
@@ -114,25 +124,39 @@ function createCard() {
   card.appendChild(button);
 
   button.addEventListener('click', () => {
-    card.classList.add('hidden');
-    // button.remove();
+    card.classList.add('gone');
+    button.remove();
   });
 }
 
-const checkFour = document.querySelector('.check-four');
-const checkFive = document.querySelector('.check-five');
+checkFours.forEach((checkFour) => {
+  checkFour.addEventListener('click', () => {
+    createCard();
+  });
+});
 
-checkFour.addEventListener(
-  'click',
-  () => {
-    createCard();
-  },
-  { once: true }
-);
-checkFive.addEventListener(
-  'click',
-  () => {
-    createCard();
-  },
-  { once: true }
-);
+// FLYING BOXES/Wingardium
+
+const checkNineteen = document.querySelectorAll('.check-nineteen');
+const vingardium = document.querySelector('.vingardium');
+
+checkNineteen.forEach((check) => {
+  check.addEventListener('click', () => {
+    check.classList.add('fly-away');
+    vingardium.classList.remove('gone');
+
+    setTimeout(() => {
+      vingardium.classList.add('gone');
+    }, 2000);
+  });
+});
+
+// Engorgio box
+
+const checkFive = document.querySelector('.engorgio');
+const engorgioText = document.querySelector('.Engorgio-text');
+
+checkFive.addEventListener('click', () => {
+  checkFive.classList.toggle('check-five');
+  engorgioText.classList.toggle('gone');
+});

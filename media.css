@@ -1,9 +1,17 @@
-@media screen  and (min-width: 768px){
-  .main-content{
-    flex-direction: row;
+@media screen and (min-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1000px;
   }
-
   .characters {
     top: 45%;
+  }
+  .quote-container {
+    margin-top: 7%;
+    /* margin-left: 5%; */
+  }
+  .btn-container {
+    margin-top: 7%;
   }
 }
