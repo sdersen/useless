@@ -3,7 +3,7 @@
   height: 50%;
   /* Kan inte sätta absolut här då går inte boxarna att klicka */
   position: absolute;
-  top: 0;
+  top: 20%;
   z-index: -1;
 }
 .confetti {
