@@ -95,7 +95,7 @@ function potterHeads() {
     characters.classList.add('gone');
     button.classList.add('gone');
   });
-};
+}
 
 //CONFETTI
 
@@ -177,7 +177,7 @@ function Wingardium() {
   checkNineteen.forEach((check) => {
     check.classList.add('fly-away');
   });
-};
+}
 
 // Engorgio box
 
