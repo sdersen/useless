@@ -34,7 +34,7 @@ body {
 .heading {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 svg {
   height: 75px;
@@ -77,10 +77,7 @@ h1:hover {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center; */
+  margin-left: 5%;
 }
 .input-fields {
   display: flex;
@@ -105,12 +102,18 @@ input {
 }
 .input-field {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.input-field button {
+  width: 100px;
+  margin-left: 5%;
+}
 .text-input {
-  width: 200px;
+  width: 170px;
   font-family: 'Courier New', Courier, monospace;
 }
 .name {
@@ -120,11 +123,9 @@ input {
 
 /* CHARACTERS */
 .characters {
-  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* top: 75%; */
   margin-top: 5%;
 }
 
@@ -146,29 +147,27 @@ button {
   height: 50px;
   width: 150px;
   border-radius: 5%;
-  border: var(--purpule) 3px solid;
+  border: var(--minion) 3px solid;
   background: transparent;
   font-size: 1rem;
   font-family: 'Source Code Pro', monospace;
 }
 button:hover {
-  background-color: var(--purpule);
+  background-color: var(--minion);
 }
 
 /* QUOTES */
 .quote-container {
-  /* position: absolute; */
   display: flex;
   justify-content: center;
   z-index: 99;
   margin-top: 5%;
-  /* top: 66%; */
 }
 .quote-card {
   height: 250px;
   width: 350px;
   background-color: var(--viridan-green);
-  border-radius: 15px;
+  border-radius: 5%;
   padding: 5%;
 }
 /* DiSSAPERING BOXES */
@@ -188,6 +187,8 @@ button:hover {
 
 /* LIST OF CHARACTERS */
 .character-list {
+  position: absolute;
+  top: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,12 +211,15 @@ button:hover {
 .Engorgio-text {
   text-align: center;
 }
+/* CLASSES FOR HIDING */
 .hidden {
   opacity: 0;
+  transition: 2s;
 }
 .gone {
   display: none;
 }
-.z-index {
+
+/* .z-index {
   z-index: 0;
-}
+} */

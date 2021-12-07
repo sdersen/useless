@@ -28,25 +28,30 @@
       </svg>
       <h1>The Potter checkbox</h1>
     </div>
-    <section class="main-content">
-      <section class="input-fields">
+    <main class="main-content">
+      <section class="input-fields grid-container-1">
         <div class="input-field">
-          <form action="">
-            <label for="Text">Name</label>
+          <label for="Text"
+            >Enter spell
             <input
               class="text-input"
               type="text"
               id="text"
               name="text"
-              placeholder="Enter your name"
-            />
-          </form>
+              placeholder="Enter spell"
+          /></label>
+          <br />
+          <button class="submit-btn">Submit</button>
         </div>
         <div class="name-container">
           <p class="name"></p>
         </div>
 
-        <form class="boxes" action="">
+        <form
+          class="boxes"
+          action=""
+          aria-label="Multiple boxes to be checked."
+        >
           <label for=""></label>
           <input class="check-one" type="checkbox" id="check" name="check" />
           <input class="check-two" type="checkbox" id="check" name="check" />
@@ -75,14 +80,15 @@
           <input type="checkbox" id="check" name="check" />
           <input class="check-three" type="checkbox" id="check" name="check" />
           <input type="checkbox" id="check" name="check" />
-          <input class="check-twenty" type="checkbox" id="check" name="check" />
+          <input type="checkbox" id="check" name="check" />
           <input
             class="check-nineteen"
             type="checkbox"
             id="check"
             name="check"
           />
-          <input class="check-three" type="checkbox" id="check" name="check" />
+          <input class="check-twenty" type="checkbox" id="check" name="check" />
+          <!-- SPELL TEXTS -->
           <div class="vingardium gone">
             <p class="vingardium-text">Wingardium Leviosa</p>
           </div>
@@ -90,12 +96,10 @@
         </form>
       </section>
 
-      <!-- POTTER SECTION -->
       <section class="grid-container-2">
+        <!-- POTTER SECTION -->
         <div class="flex-container">
-          <section class="btn-container">
-            <!-- <button>Button generated</button> -->
-          </section>
+          <section class="btn-container"></section>
           <section class="characters"></section>
         </div>
         <!-- QUOTES -->
@@ -118,10 +122,8 @@
           ><span class="confetti"></span><span class="confetti"></span>
         </section>
       </section>
-    </section>
-    <section class="character-list hidden">
-      <!-- <button>Avada Kedavra</button> -->
-    </section>
+    </main>
+    <section class="character-list gone"></section>
 
     <script src="script.js"></script>
     <script src="api.js"></script>

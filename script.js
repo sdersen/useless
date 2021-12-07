@@ -1,3 +1,4 @@
+//SCROLL
 window.addEventListener('scroll', (e) => {
   if (window.scrollY < 600) {
     document.body.style.backgroundColor = 'var(--timber-grey)';
@@ -6,23 +7,41 @@ window.addEventListener('scroll', (e) => {
   }
 });
 
-window.addEventListener('scroll', (e) => {
-  console.log(window.scrollY);
-  if (window.scrollY > 1100) {
-    console.log('Ava Kadavra');
+//SPELL
+// Input field
+const nameInput = document.querySelector('.text-input');
+//Btn
+const subButton = document.querySelector('.submit-btn');
+// Prints the name
+const yourName = document.querySelector('.name');
+
+subButton.addEventListener('click', (e) => {
+  const spell = nameInput.value;
+
+  if (spell == 'Engorgio') {
+    engorgio();
+    yourName.textContent = nameInput.value;
+    removeSpell(yourName);
+  }
+  if (spell == 'Wingardium Leviosa') {
+    Wingardium();
+    yourName.textContent = nameInput.value;
+    removeSpell(yourName);
+  }
+  if (spell == 'Fidelius') {
+    fidelius();
+    yourName.textContent = nameInput.value;
+    removeSpell(yourName);
   }
 });
 
-//ENTER NAME
+function removeSpell(spellName) {
+  setTimeout(() => {
+    spellName.classList.add('gone');
+  }, 3000);
+}
 
-const nameInput = document.querySelector('.text-input');
-const yourName = document.querySelector('.name');
-
-nameInput.addEventListener('keyup', (e) => {
-  yourName.textContent = `Okey ${e.target.value} let´s play!`;
-});
-
-// POTTER SECTION
+// CHARACTER IMAGES
 const checkOne = document.querySelector('.check-one');
 const btnContainer = document.querySelector('.btn-container');
 
@@ -76,7 +95,7 @@ function potterHeads() {
     characters.classList.add('gone');
     button.classList.add('gone');
   });
-}
+};
 
 //CONFETTI
 
@@ -87,14 +106,20 @@ checkTwo.addEventListener('click', () => {
   confetti.classList.toggle('hidden');
 });
 
-//DISSAPERING BOXES
-const checkThree = document.querySelectorAll('.check-three');
+//DISSAPERING BOXES / Fidelius
 
+const checkThree = document.querySelectorAll('.check-three');
 checkThree.forEach((check) => {
   check.addEventListener('click', () => {
     check.classList.add('hidden');
   });
 });
+
+function fidelius() {
+  checkThree.forEach((check) => {
+    check.classList.add('hidden');
+  });
+}
 
 // QUOTES
 const cardContainer = document.querySelector('.quote-container');
@@ -142,21 +167,29 @@ const vingardium = document.querySelector('.vingardium');
 
 checkNineteen.forEach((check) => {
   check.addEventListener('click', () => {
-    check.classList.add('fly-away');
+    Wingardium();
     vingardium.classList.remove('gone');
-
-    setTimeout(() => {
-      vingardium.classList.add('gone');
-    }, 2000);
+    removeSpell(vingardium);
   });
 });
+
+function Wingardium() {
+  checkNineteen.forEach((check) => {
+    check.classList.add('fly-away');
+  });
+};
 
 // Engorgio box
 
 const checkFive = document.querySelector('.engorgio');
 const engorgioText = document.querySelector('.Engorgio-text');
 
-checkFive.addEventListener('click', () => {
+function engorgio() {
   checkFive.classList.toggle('check-five');
+}
+
+checkFive.addEventListener('click', () => {
+  engorgio();
   engorgioText.classList.toggle('gone');
+  removeSpell(engorgioText);
 });
