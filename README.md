@@ -1,7 +1,8 @@
-img src="https://giphy.com/gifs/harry-potter-hermione-granger-ron-BJmTtZL4hova8"
+<img src="https://media.giphy.com/media/BJmTtZL4hova8/giphy.gif">
+
 # Potter checkbox
 
-A useless site that somehow ended up with a Harry Potter theme...
+A useless site that somehow ended up with a Harry Potter theme :)
 
 https://potter-checkbox.netlify.app/
 
