@@ -2,7 +2,7 @@
 
 # Potter checkbox
 
-A useless site that somehow ended up with a Harry Potter theme :)
+A school project for HTML/CSS/JS. A useless site that somehow ended up with a Harry Potter theme :)
 
 https://potter-checkbox.netlify.app/
 
