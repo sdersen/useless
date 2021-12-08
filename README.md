@@ -1,9 +1,10 @@
+<img src="https://media.giphy.com/media/12fgztS23saCVa/giphy.gif" width="100%">
 
 # Project Title
 
-A useless site that somehow ended up with a Harry Potter theme...
+A schoolproject with HTML/CSS/JS. A useless site that somehow ended up with a Harry Potter theme...
 
-#https://potter-checkbox.netlify.app/
+https://potter-checkbox.netlify.app/
 
 # Installation
 
