@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/check-double-solid.svg"
+    />
+
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/confetti.css" />
     <link rel="stylesheet" href="styles/media.css" />
-    <title></title>
+    <title>Potter checkboxes</title>
   </head>
   <body>
-    <div class="heading">
+    <header class="heading">
       <svg
         aria-hidden="true"
         focusable="false"
@@ -27,14 +33,12 @@
         ></path>
       </svg>
       <h1>potter checkbox</h1>
-    </div>
+    </header>
     <main class="main-content">
       <section class="input-fields grid-container-1">
         <div class="input-field">
-          <label for="Text"
-            >Enter spell
-            <input class="text-input" type="text" id="text" name="text"
-          /></label>
+          <label for="Text">Enter spell</label>
+          <input class="text-input" type="text" id="text" name="text" aria-label="Enter spell Engorgio, Wingardium Leviosa or Fidelius"/>
           <button class="submit-btn">Submit</button>
         </div>
         <div class="name-container">
@@ -159,6 +163,7 @@
         </section>
       </section>
     </main>
+
     <section class="character-list gone"></section>
 
     <script src="/script/script.js"></script>

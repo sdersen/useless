@@ -79,7 +79,7 @@ h1:hover {
 .input-field {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 20px;
 }
 .submit-btn {
