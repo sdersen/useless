@@ -1,10 +1,23 @@
 //SCROLL
 window.addEventListener('scroll', (e) => {
-  if (window.scrollY < 600) {
+  console.log(window.scrollY);
+  if (window.scrollY > 700) {
     document.body.style.backgroundColor = 'var(--timber-grey)';
-  } else {
-    document.body.style.backgroundColor = 'var(--darker-pink)';
   }
+  if (window.scrollY > 7000) {
+    document.body.style.backgroundColor = 'var(--timber-darker)';
+  }
+  if (window.scrollY > 13000) {
+    document.body.style.backgroundColor = 'var(--timber-dark)';
+  }
+});
+
+//FOCUS
+const yourName = document.querySelector('.name');
+const sepellInst = document.querySelector('.text-input');
+sepellInst.addEventListener('focus', (e) => {
+  yourName.textContent =
+    'Ok, you are a beginner... Engorgio, Wingardium Leviosa and Fidelius is all you can master. And if you feel like a muggle you can check the boxes..';
 });
 
 //SPELL
@@ -13,7 +26,6 @@ const nameInput = document.querySelector('.text-input');
 //Btn
 const subButton = document.querySelector('.submit-btn');
 // Prints the name
-const yourName = document.querySelector('.name');
 
 subButton.addEventListener('click', (e) => {
   const spell = nameInput.value;
@@ -37,7 +49,7 @@ subButton.addEventListener('click', (e) => {
 
 function removeSpell(spellName) {
   setTimeout(() => {
-    spellName.classList.add('gone');
+    spellName.classList.add('hidden');
   }, 3000);
 }
 

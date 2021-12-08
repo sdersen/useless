@@ -4,10 +4,6 @@
     grid-template-rows: 1fr;
     max-width: 1000px;
   }
-  .submit-btn {
-    margin-left: 5%;
-    margin-top: 0%;
-  }
   .characters {
     top: 45%;
   }
@@ -21,12 +17,17 @@
   .character-list {
     top: 90%;
   }
+  .confetti-container {
+    width: 50%;
+  }
 }
 
+/* Styles boxes with scale only in Safari */
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .box {
-      transform: scale(2);
+      transform: scale(3.5);
+      margin: 2%;
     }
   }
 }

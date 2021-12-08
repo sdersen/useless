@@ -1,30 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap');
 :root {
-  --darker-pink: #fab0d7;
-  --pink: #facee5;
-  --teal: #80b7ba;
-
-  --viridan-green: #119da4;
   --timber-grey: #d7d9ce;
-  --black-ish: #040404;
-  --purpule: #dabfff;
-
+  --timber-darker: #a8aaa1;
+  --timber-dark: #777972;
   --middle-blue: #23305c;
   --dark-blue: #0e1a40;
-
-  --light-grey: #d1d1d1;
   --candy-pink: #dd7373;
-  --minion: #ead94c;
+  --minion:#EAD94C;
 
   -webkit-appearance: none;
 }
 @font-face {
   font-family: 'Dont Click Me';
-  src: url('Fonts/DontClickMeDEMO-Regular.woff2') format('woff2');
+  src: url('/Fonts/DontClickMeDEMO-Regular.woff2') format('woff2');
 }
 * {
   box-sizing: border-box;
-  /* -webkit-appearance: none; */
 }
 body {
   margin: 0;
@@ -70,7 +61,7 @@ h1 {
   margin: auto;
   margin-top: 20px;
   font-family: 'Dont Click Me';
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h1:hover {
   color: var(--viridan-green);
@@ -80,48 +71,46 @@ h1:hover {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
-  margin-left: 5%;
 }
 /* Entire input field */
 .input-fields {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* textbox and button  */
 .input-field {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  /* margin-bottom: 20px; */
   margin-top: 20px;
 }
-
 .submit-btn {
   width: 100px;
-  margin-right: 10%;
-  margin-left: 5%;
+  margin-top: 5%;
 }
 .text-input {
   width: 170px;
-  height: 50px;
+  height: 40px;
   font-family: 'Courier New', Courier, monospace;
-  /* margin-left: 15%; */
   font-size: 1rem;
 }
 .name {
   text-align: center;
+  height: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.8rem;
 }
 
 /* The section with boxes */
 .boxes {
-  /* position: absolute; */
-  /* Måste vara relativ annars funkar inte boxarna. */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
   max-width: 300px;
-  margin: auto;
   padding-top: 5%;
   z-index: 99;
 }
@@ -131,9 +120,7 @@ h1:hover {
   width: 50px;
 }
 
-/* VINGARDIUM */
-
-/* CHARACTERS */
+/* CHARACTER IMAGES */
 .characters {
   display: flex;
   flex-wrap: wrap;
@@ -156,16 +143,18 @@ h1:hover {
   margin-top: 5%;
 }
 button {
-  height: 50px;
+  height: 40px;
   width: 150px;
   border-radius: 5%;
-  border: var(--minion) 3px solid;
+  border: var(--middle-blue) 3px solid;
   background: transparent;
   font-size: 1rem;
+  color: var(--dark-blue);
   font-family: 'Source Code Pro', monospace;
 }
 button:hover {
-  background-color: var(--minion);
+  background-color: var(--middle-blue);
+  color: var(--timber-grey);
 }
 
 /* QUOTES */
@@ -173,16 +162,16 @@ button:hover {
   display: flex;
   justify-content: center;
   z-index: 99;
-  margin-top: 5%;
 }
 .quote-card {
   height: 250px;
   width: 350px;
-  background-color: var(--viridan-green);
+  background-color: var(--candy-pink);
   border-radius: 5%;
   padding: 5%;
 }
-/* DiSSAPERING BOXES */
+
+/* VINGARDIUM */
 .fly-away {
   animation: flyAway 3s;
   animation-fill-mode: forwards;
@@ -200,16 +189,17 @@ button:hover {
 /* LIST OF CHARACTERS */
 .character-list {
   position: absolute;
-  top: 80%;
+  top: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10%;
 }
 
 .avada-kedavra-btn {
   width: 300px;
   height: 50px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   font-size: 2rem;
   font-weight: bold;
 }
