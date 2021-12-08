@@ -1,5 +1,5 @@
 .confetti-container {
-  width: 100%;
+  width: 90%;
   height: 50%;
   /* Kan inte sätta absolut här då går inte boxarna att klicka */
   position: absolute;

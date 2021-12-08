@@ -15,6 +15,8 @@
   --light-grey: #d1d1d1;
   --candy-pink: #dd7373;
   --minion: #ead94c;
+
+  -webkit-appearance: none;
 }
 @font-face {
   font-family: 'Dont Click Me';
@@ -22,6 +24,7 @@
 }
 * {
   box-sizing: border-box;
+  /* -webkit-appearance: none; */
 }
 body {
   margin: 0;
@@ -79,11 +82,37 @@ h1:hover {
   justify-content: center;
   margin-left: 5%;
 }
+/* Entire input field */
 .input-fields {
   display: flex;
   flex-direction: column;
 }
+/* textbox and button  */
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
+.submit-btn {
+  width: 100px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+.text-input {
+  width: 170px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  /* margin-left: 15%; */
+  font-size: 1rem;
+}
+.name {
+  text-align: center;
+}
+
+/* The section with boxes */
 .boxes {
   /* position: absolute; */
   /* Måste vara relativ annars funkar inte boxarna. */
@@ -96,29 +125,12 @@ h1:hover {
   padding-top: 5%;
   z-index: 99;
 }
-input {
-  width: 50px;
+
+.box {
   height: 50px;
+  width: 50px;
 }
-.input-field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.input-field button {
-  width: 100px;
-  margin-left: 5%;
-}
-.text-input {
-  width: 170px;
-  font-family: 'Courier New', Courier, monospace;
-}
-.name {
-  text-align: center;
-}
+
 /* VINGARDIUM */
 
 /* CHARACTERS */
@@ -219,7 +231,3 @@ button:hover {
 .gone {
   display: none;
 }
-
-/* .z-index {
-  z-index: 0;
-} */
