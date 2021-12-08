@@ -4,8 +4,14 @@
     grid-template-rows: 1fr;
     max-width: 1000px;
   }
+  .heading {
+    margin-top: 5%;
+  }
   .characters {
     top: 45%;
+  }
+  h1 {
+    font-size: 5rem;
   }
   .quote-container {
     margin-top: 7%;
