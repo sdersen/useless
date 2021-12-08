@@ -28,7 +28,7 @@ body {
 .heading {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  margin-top: 7%;
 }
 svg {
   height: 75px;
@@ -39,27 +39,16 @@ svg {
 }
 @keyframes rotateY {
   0% {
-    /* transform: rotateY(0deg); */
     transform: scale(1);
   }
   50% {
-    /* transform: rotateY(360deg); */
     transform: scale(1.5);
   }
   100% {
-    /* transform: rotateY(360deg); */
     transform: scale(1);
   }
 }
-/* For safari desktop */
-/* @-webkit-keyframes rotateY {
-  0% {
-    -webkit-transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-  }
-} */
+
 svg:hover {
   color: var(--viridan-green);
 }
@@ -86,12 +75,11 @@ h1:hover {
   justify-content: center;
   align-items: center;
 }
-/* textbox and button  */
+/* Textbox and button  */
 .input-field {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* margin-bottom: 20px; */
   margin-top: 20px;
 }
 .submit-btn {
@@ -106,7 +94,7 @@ h1:hover {
 }
 .name {
   text-align: center;
-  height: 40px;
+  height: 45px;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 0.8rem;
@@ -121,10 +109,9 @@ h1:hover {
   padding-top: 5%;
   z-index: 99;
 }
-
 .box {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
 }
 
 /* CHARACTER IMAGES */
@@ -134,7 +121,6 @@ h1:hover {
   justify-content: center;
   margin-top: 5%;
 }
-
 .character {
   height: 100px;
   width: 100px;
@@ -151,7 +137,7 @@ h1:hover {
 }
 button {
   height: 40px;
-  width: 150px;
+  width: 170px;
   border-radius: 5%;
   border: var(--middle-blue) 3px solid;
   background: transparent;
@@ -196,7 +182,7 @@ button:hover {
 /* LIST OF CHARACTERS */
 .character-list {
   position: absolute;
-  top: 85%;
+  top: 87%;
   display: flex;
   flex-direction: column;
   align-items: center;

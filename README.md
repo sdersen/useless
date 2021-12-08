@@ -2,11 +2,13 @@ INSERT MANDATORY GIF
 
 # Project Title
 
-Text about the project. This would also be a great place to link the game on Netlify.
+A useless site that somehow ended up with a Harry Potter theme...
+
+#https://potter-checkbox.netlify.app/
 
 # Installation
 
-Add the installation instructions.
+Clone the repo and open on localhost, or visit the link above.
 
 # Code Review
 

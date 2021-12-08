@@ -25,7 +25,6 @@ sepellInst.addEventListener('focus', (e) => {
 const nameInput = document.querySelector('.text-input');
 //Btn
 const subButton = document.querySelector('.submit-btn');
-// Prints the name
 
 subButton.addEventListener('click', (e) => {
   const spell = nameInput.value;
@@ -86,6 +85,10 @@ const potterImages = [
     url: 'https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg',
     alt: 'Hagrid',
   },
+  {
+    url: 'https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg',
+    alt: 'Hagrid',
+  },
 ];
 
 const characters = document.querySelector('.characters');
@@ -110,7 +113,6 @@ function potterHeads() {
 }
 
 //CONFETTI
-
 const checkTwo = document.querySelector('.check-two');
 const confetti = document.querySelector('.confetti-container');
 
@@ -119,7 +121,6 @@ checkTwo.addEventListener('click', () => {
 });
 
 //DISSAPERING BOXES / Fidelius
-
 const checkThree = document.querySelectorAll('.check-three');
 checkThree.forEach((check) => {
   check.addEventListener('click', () => {
@@ -173,7 +174,6 @@ checkFours.forEach((checkFour) => {
 });
 
 // FLYING BOXES/Wingardium
-
 const checkNineteen = document.querySelectorAll('.check-nineteen');
 const vingardium = document.querySelector('.vingardium');
 
@@ -192,7 +192,6 @@ function Wingardium() {
 }
 
 // Engorgio box
-
 const checkFive = document.querySelector('.engorgio');
 const engorgioText = document.querySelector('.Engorgio-text');
 
