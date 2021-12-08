@@ -33,16 +33,22 @@ body {
 svg {
   height: 75px;
   margin: auto;
-  animation: rotateY 2s 2;
-  -webkit-animation: rotateY 2s 2;
+  animation: rotateY 2s 3;
+  -webkit-animation: rotateY 2s 3;
   animation-timing-function: linear;
 }
 @keyframes rotateY {
   0% {
-    transform: rotateY(0deg);
+    /* transform: rotateY(0deg); */
+    transform: scale(1);
+  }
+  50% {
+    /* transform: rotateY(360deg); */
+    transform: scale(1.5);
   }
   100% {
-    transform: rotateY(360deg);
+    /* transform: rotateY(360deg); */
+    transform: scale(1);
   }
 }
 /* For safari desktop */
