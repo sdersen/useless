@@ -45,14 +45,15 @@ svg {
     transform: rotateY(360deg);
   }
 }
-@-webkit-keyframes rotateY {
+/* For safari desktop */
+/* @-webkit-keyframes rotateY {
   0% {
     -webkit-transform: rotateY(0deg);
   }
   100% {
     -webkit-transform: rotateY(360deg);
   }
-}
+} */
 svg:hover {
   color: var(--viridan-green);
 }

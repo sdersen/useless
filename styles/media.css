@@ -23,11 +23,11 @@
 }
 
 /* Styles boxes with scale only in Safari */
-@media not all and (min-resolution: 0.001dpcm) {
+/* @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .box {
       transform: scale(3.5);
       margin: 2%;
     }
   }
-}
+} */
