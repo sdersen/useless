@@ -1,10 +1,9 @@
-INSERT MANDATORY GIF
-
-# Project Title
+img src="https://giphy.com/gifs/harry-potter-hermione-granger-ron-BJmTtZL4hova8"
+# Potter checkbox
 
 A useless site that somehow ended up with a Harry Potter theme...
 
-#https://potter-checkbox.netlify.app/
+https://potter-checkbox.netlify.app/
 
 # Installation
 
