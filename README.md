@@ -1,6 +1,6 @@
 <img src="https://media.giphy.com/media/12fgztS23saCVa/giphy.gif" width="100%">
 
-# Project Title
+# Potter checkbox
 
 A schoolproject with HTML/CSS/JS. A useless site that somehow ended up with a Harry Potter theme...
 
