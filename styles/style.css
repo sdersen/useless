@@ -182,7 +182,7 @@ button:hover {
 /* LIST OF CHARACTERS */
 .character-list {
   position: absolute;
-  top: 87%;
+  /* top: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;

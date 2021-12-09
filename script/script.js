@@ -51,18 +51,17 @@ function removeSpell(spellName) {
     spellName.classList.add('hidden');
   }, 3000);
 }
+//REMOVE FUNCTION
+function removeElement(elementOne, elementTwo) {
+  setTimeout(() => {
+    elementOne.classList.add('gone');
+    elementTwo.classList.add('gone');
+  }, 3000);
+}
 
 // CHARACTER IMAGES
 const checkOne = document.querySelector('.check-one');
 const btnContainer = document.querySelector('.btn-container');
-
-checkOne.addEventListener(
-  'click',
-  () => {
-    potterHeads();
-  },
-  { once: true }
-);
 
 const potterImages = [
   {
@@ -112,6 +111,15 @@ function potterHeads() {
   });
 }
 
+checkOne.addEventListener(
+  'click',
+  () => {
+    potterHeads();
+    removeElement(characters, btnContainer);
+  },
+  { once: true }
+);
+
 //CONFETTI
 const checkTwo = document.querySelector('.check-two');
 const confetti = document.querySelector('.confetti-container');
@@ -139,6 +147,7 @@ const cardContainer = document.querySelector('.quote-container');
 const card = document.querySelector('.quote-card');
 const quote = document.querySelector('.quote');
 const checkFours = document.querySelectorAll('.check-four');
+const closeBtn = document.querySelector('.closeBtn');
 
 const quotes = [
   'I assure you that if you die, you need not hand your homework in.',
@@ -156,20 +165,17 @@ function createCard() {
   card.classList.remove('gone');
   cardContainer.classList.remove('gone');
   quote.textContent = randomQuote(quotes);
+  closeBtn.classList.remove('gone');
 
-  const button = document.createElement('button');
-  button.textContent = 'Close';
-  card.appendChild(button);
-
-  button.addEventListener('click', () => {
+  closeBtn.addEventListener('click', () => {
     card.classList.add('gone');
-    button.remove();
   });
 }
 
 checkFours.forEach((checkFour) => {
   checkFour.addEventListener('click', () => {
     createCard();
+    removeElement(cardContainer);
   });
 });
 
