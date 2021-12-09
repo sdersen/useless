@@ -186,14 +186,14 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .avada-kedavra-btn {
-  width: 300px;
+  width: 270px;
   height: 50px;
   margin-bottom: 10%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
