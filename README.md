@@ -22,5 +22,5 @@ Clone the repo and open on localhost, or visit the link above.
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Christopher Michael
+2. Emma Hansson
