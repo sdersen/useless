@@ -15,7 +15,6 @@ checkTwenty.addEventListener('click', () => {
           const fullName = document.createElement('p');
           fullName.textContent = character.name;
           characterList.appendChild(fullName);
-          // { once: true };
         });
 
         const avadaKedavraBtn = document.createElement('button');

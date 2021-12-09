@@ -6,7 +6,7 @@
   --middle-blue: #23305c;
   --dark-blue: #0e1a40;
   --candy-pink: #dd7373;
-  --minion:#EAD94C;
+  --minion: #ead94c;
 
   -webkit-appearance: none;
 }
@@ -157,8 +157,8 @@ button:hover {
   z-index: 99;
 }
 .quote-card {
-  height: 250px;
-  width: 350px;
+  height: 200px;
+  width: 300px;
   background-color: var(--candy-pink);
   border-radius: 5%;
   padding: 5%;
@@ -182,7 +182,6 @@ button:hover {
 /* LIST OF CHARACTERS */
 .character-list {
   position: absolute;
-  /* top: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;

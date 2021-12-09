@@ -1,6 +1,5 @@
 //SCROLL
 window.addEventListener('scroll', (e) => {
-  console.log(window.scrollY);
   if (window.scrollY > 700) {
     document.body.style.backgroundColor = 'var(--timber-grey)';
   }
@@ -52,10 +51,16 @@ function removeSpell(spellName) {
   }, 3000);
 }
 //REMOVE FUNCTION
-function removeElement(elementOne, elementTwo) {
+function removeCharacterElement(elementOne, elementTwo) {
   setTimeout(() => {
     elementOne.classList.add('gone');
     elementTwo.classList.add('gone');
+  }, 3000);
+}
+
+function removeCardElement(elementOne) {
+  setTimeout(() => {
+    elementOne.classList.add('gone');
   }, 3000);
 }
 
@@ -115,7 +120,7 @@ checkOne.addEventListener(
   'click',
   () => {
     potterHeads();
-    removeElement(characters, btnContainer);
+    removeCharacterElement(characters, btnContainer);
   },
   { once: true }
 );
@@ -175,7 +180,7 @@ function createCard() {
 checkFours.forEach((checkFour) => {
   checkFour.addEventListener('click', () => {
     createCard();
-    removeElement(cardContainer);
+    removeCardElement(cardContainer);
   });
 });
 
