@@ -12,10 +12,10 @@ window.addEventListener('scroll', (e) => {
 });
 
 //FOCUS
-const spellInfo = document.querySelector('.name');
-const sepellInput = document.querySelector('.text-input');
-sepellInput.addEventListener('focus', (e) => {
-  spellInfo.textContent =
+const yourName = document.querySelector('.name');
+const sepellInst = document.querySelector('.text-input');
+sepellInst.addEventListener('focus', (e) => {
+  yourName.textContent =
     'Ok, you are a beginner... Engorgio, Wingardium Leviosa and Fidelius is all you can master. And if you feel like a muggle you can check the boxes..';
 });
 
@@ -55,7 +55,7 @@ function removeCharacterElement(elementOne, elementTwo) {
   setTimeout(() => {
     elementOne.classList.add('gone');
     elementTwo.classList.add('gone');
-  }, 5000);
+  }, 3000);
 }
 
 function removeCardElement(elementOne) {
@@ -155,11 +155,11 @@ const checkFours = document.querySelectorAll('.check-four');
 const closeBtn = document.querySelector('.closeBtn');
 
 const quotes = [
-  '"I assure you that if you die, you need not hand your homework in."',
-  '"Just because you have the emotional range of a teaspoon doesn’t mean we all have."',
-  '"We could all have been killed—or worse, expelled"',
-  '"It does not do to dwell on dreams and forget to live."',
-  '"We must all face the choice between what is right, and what is easy."',
+  'I assure you that if you die, you need not hand your homework in.',
+  'Just because you have the emotional range of a teaspoon doesn’t mean we all have.',
+  'We could all have been killed—or worse, expelled',
+  'It does not do to dwell on dreams and forget to live.',
+  'We must all face the choice between what is right, and what is easy.',
 ];
 
 function randomQuote(quote) {
