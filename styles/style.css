@@ -12,7 +12,8 @@
 }
 @font-face {
   font-family: 'Dont Click Me';
-  src: url('/Fonts/DontClickMeDEMO-Regular.woff2') format('woff2');
+  src: url('/Fonts/DontClickMeDEMO-Regular.woff2') format('woff2'),
+    url('/Fonts/DontClickMeDEMO-Regular.woff') format('woff');
 }
 * {
   box-sizing: border-box;
