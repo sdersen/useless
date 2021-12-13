@@ -45,17 +45,23 @@ subButton.addEventListener('click', (e) => {
   }
 });
 
+//REMOVE FUNCTIONS
 function removeSpell(spellName) {
   setTimeout(() => {
-    spellName.classList.add('hidden');
+    yourName.textContent = '';
   }, 3000);
 }
-//REMOVE FUNCTION
+function removeBottomSpell(bottomSpellName) {
+  setTimeout(() => {
+    bottomSpellName.classList.add('gone');
+  }, 3000);
+}
+
 function removeCharacterElement(elementOne, elementTwo) {
   setTimeout(() => {
     elementOne.classList.add('gone');
     elementTwo.classList.add('gone');
-  }, 3000);
+  }, 5000);
 }
 
 function removeCardElement(elementOne) {
@@ -155,11 +161,11 @@ const checkFours = document.querySelectorAll('.check-four');
 const closeBtn = document.querySelector('.closeBtn');
 
 const quotes = [
-  'I assure you that if you die, you need not hand your homework in.',
-  'Just because you have the emotional range of a teaspoon doesn’t mean we all have.',
-  'We could all have been killed—or worse, expelled',
-  'It does not do to dwell on dreams and forget to live.',
-  'We must all face the choice between what is right, and what is easy.',
+  '"I assure you that if you die, you need not hand your homework in."',
+  '"Just because you have the emotional range of a teaspoon doesn’t mean we all have."',
+  '"We could all have been killed—or worse, expelled"',
+  '"It does not do to dwell on dreams and forget to live."',
+  '"We must all face the choice between what is right, and what is easy."',
 ];
 
 function randomQuote(quote) {
@@ -192,7 +198,7 @@ checkNineteen.forEach((check) => {
   check.addEventListener('click', () => {
     Wingardium();
     vingardium.classList.remove('gone');
-    removeSpell(vingardium);
+    removeBottomSpell(vingardium);
   });
 });
 
@@ -213,5 +219,5 @@ function engorgio() {
 checkFive.addEventListener('click', () => {
   engorgio();
   engorgioText.classList.toggle('gone');
-  removeSpell(engorgioText);
+  removeBottomSpell(engorgioText);
 });
