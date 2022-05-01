@@ -2,9 +2,9 @@
 
 # Potter checkbox
 
-A schoolproject with HTML/CSS/JS. A useless site that somehow ended up with a Harry Potter theme...
+A school project with HTML/CSS/JS. A useless site that somehow ended up with a Harry Potter theme...
 
-Besides from the standard requierments for the assignment I have also added som animations and a connection to a API.
+Besides from the standard requirements for the assignment I have also added som animations and a connection to a API.
 
 https://potter-checkbox.netlify.app/
 
